@@ -6,6 +6,8 @@ body{
     background-color: #f4f4f4;
     display: flex;
     flex-flow: column nowrap;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 
@@ -47,6 +49,7 @@ nav {
 nav .name {
     font-family: 'Amatic SC', cursive;
     font-size: 25px;
+    padding-left: 20px;
 }
 
 nav .name h1 {
@@ -108,8 +111,10 @@ nav li {
 .footer{
     display: flex;
     justify-content: flex-end;
-    background-color: #57c0bb;
+    background-color: #345e5c;
+    color: #fff;
 }
 .footer p{
-    margin-right: 10px;
+    font-size: 14px;
+    margin-right: 20px;
 }
