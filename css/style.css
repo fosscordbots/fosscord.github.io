@@ -28,6 +28,7 @@ header a {
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
+    transition: 0.2s;
 }
 
 header a:hover {
@@ -71,7 +72,7 @@ nav li {
     padding: 0px 20px 0px 20px;
 }
 
-section.showcase {
+.showcase {
     background-color: #003333;
     display: flex;
     flex-flow: column nowrap;
@@ -81,21 +82,21 @@ section.showcase {
     height: 25vh;
 }
 
-section.showcase h1 {
+.showcase h1 {
     font-size: 50px;
     padding-bottom: 10px;
 }
 
-section.showcase p {
+.showcase p {
     font-size: 20px;
 }
 
-section.showcase p a {
+.showcase p a {
     color: #fff;
     text-decoration: none;
 }
 
-section.description {
+.description {
     background-color: #008877;
     display: flex;
     flex-flow: column wrap;
@@ -106,31 +107,36 @@ section.description {
     color: #fff;
 }
 
-section.description p {
+.description p {
     font-size: 16px;
 }
 
-section.showcase .botdescription {
+.showcase .botdescription {
     display: flex;
     flex-flow: row wrap;
 }
 
-section.showcase .botdescription .logo {
+.showcase .botdescription .logo {
     padding-top: 15px;
     display: flex;
 }
 
-section.showcase .botdescription .logo img {
+.showcase .botdescription .logo img {
     widows: 13em;
     height:13em;
 }
 
-section.showcase .botdescription .text {
+.showcase .botdescription .text {
     display: flex;
     flex-flow: column wrap;
 }
 
-footer.footer {
+.showcase .botdescription .text p a:hover{
+color:#008755;
+transition: 0.3s;
+}
+
+.footer {
     display: flex;
     justify-content: flex-end;
     background-color: #57c0bb;
@@ -138,4 +144,5 @@ footer.footer {
     height:4vh;
     align-items: baseline;
     padding: 0 1rem 0.5rem 0;
+    text-align: center;
 }
