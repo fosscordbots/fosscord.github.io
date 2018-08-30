@@ -1,36 +1,29 @@
-body{
+body {
     font: 15px/1.5;
     font-family: 'Comfortaa', cursive;
     padding: 0;
     margin: 0;
     background-color: #f4f4f4;
-    display: flex;
-    flex-flow: column nowrap;
-    width: 100vw;
-    overflow-x: hidden;
 }
 
-
-.container {
-    width: 80%;
+#wrapper {
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
 }
-
 
 /* header */
-
 header {
     background: #006666;
     padding-top: 0.1rem;
-    min-height: 6rem;
+    height: 10vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-flow: column nowrap;
+    align-items: center;
 }
 
-header a{
+header a {
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
@@ -38,18 +31,23 @@ header a{
 }
 
 header a:hover {
-    color:  #009999;
+    color: #009999;
+}
+
+header a.activePage {
+    color: #009999;
+    font-weight: bolder;
 }
 
 nav {
+    width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav .name {
     font-family: 'Amatic SC', cursive;
     font-size: 25px;
-    padding-left: 20px;
 }
 
 nav .name h1 {
@@ -58,7 +56,7 @@ nav .name h1 {
 }
 
 nav .name a {
-    font-size: 22px;
+    font-size: 30px;
     text-transform: none;
 }
 
@@ -73,48 +71,71 @@ nav li {
     padding: 0px 20px 0px 20px;
 }
 
-.showcase {
+section.showcase {
     background-color: #003333;
     display: flex;
-    min-height: 400px;
-    text-align: center;
+    flex-flow: column nowrap;
     justify-content: center;
+    align-items:center;
     color: #fff;
-    margin: 0;
+    height: 25vh;
 }
 
-.showcase h1 {
-    margin-top: 6rem;
+section.showcase h1 {
     font-size: 50px;
-    float: center;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
-.showcase p{
+section.showcase p {
     font-size: 20px;
 }
 
-.description {
+section.showcase p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section.description {
     background-color: #008877;
     display: flex;
     flex-flow: column wrap;
-    min-height: 400px;
+    height: 60vh;
     text-align: center;
     align-items: center;
+    padding: 0 7rem;
     color: #fff;
 }
 
-.description p{
+section.description p {
     font-size: 16px;
 }
 
-.footer{
+section.showcase .botdescription {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section.showcase .botdescription .logo {
+    padding-top: 15px;
+    display: flex;
+}
+
+section.showcase .botdescription .logo img {
+    widows: 13em;
+    height:13em;
+}
+
+section.showcase .botdescription .text {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+footer.footer {
     display: flex;
     justify-content: flex-end;
-    background-color: #345e5c;
+    background-color: #57c0bb;
     color: #fff;
-}
-.footer p{
-    font-size: 14px;
-    margin-right: 20px;
+    height:4vh;
+    align-items: baseline;
+    padding: 0 1rem 0.5rem 0;
 }
