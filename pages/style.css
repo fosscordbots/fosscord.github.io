@@ -4,18 +4,17 @@ body {
     padding: 0;
     margin: 0;
     background-color: #f4f4f4;
+    display: flex;
+    flex-flow: column nowrap;
 }
-
 
 .container {
     width: 80%;
-    overflow: hidden;
-
+    display: flex;
+    flex-flow: column nowrap;
 }
 
-
 /* header */
-
 header {
     background: #006666;
     padding-top: 0.1rem;
@@ -23,6 +22,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow: column nowrap;
 }
 
 header a {
@@ -32,56 +32,78 @@ header a {
     font-size: 16px;
 }
 
-header a:hover {
-    color:  #009999;
-}
 
-.reddit:active{ 
+header a:hover {
     color: #009999;
 }
 
-header #name {
-    float: left;
+header a.activePage {
+    color: #009999;
+    font-weight: bolder;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .name {
     font-family: 'Amatic SC', cursive;
     font-size: 25px;
 }
 
-header #name h1 {
+nav .name h1 {
     margin: 0;
     color: #ffffff;
 }
 
-header #name a {
+nav .name a {
     font-size: 22px;
     text-transform: none;
 }
 
-header a.activePage { 
-    color: #009999;
-}
-
-header nav {
-    float: right;
-}
-
-header ul {
+nav ul {
     margin: 0;
     padding: 0;
-    float: right;
     padding-top: 1.3rem;
 }
 
-header li {
+nav li {
     display: inline;
     padding: 0px 20px 0px 20px;
 }
 
-#showcase {
+.showcase {
     background-color: #003333;
     display: flex;
-    justify-content: flex-start;
+    min-height: 400px;
+    text-align: center;
+    justify-content: center;
     color: #fff;
     margin: 0;
 }
 
+.showcase h1 {
+    margin-top: 6rem;
+    font-size: 50px;
+    float: center;
+    margin-bottom: 10px;
+}
 
+.showcase p {
+    font-size: 20px;
+}
+
+.description {
+    background-color: #008877;
+    display: flex;
+    flex-flow: column wrap;
+    min-height: 400px;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+}
+
+.description p {
+    font-size: 16px;
+}
