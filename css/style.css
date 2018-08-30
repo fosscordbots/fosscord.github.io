@@ -1,4 +1,4 @@
-body{
+body {
     font: 15px/1.5;
     font-family: 'Comfortaa', cursive;
     padding: 0;
@@ -8,16 +8,13 @@ body{
     flex-flow: column nowrap;
 }
 
-
 .container {
     width: 80%;
     display: flex;
     flex-flow: column nowrap;
 }
 
-
 /* header */
-
 header {
     background: #006666;
     padding-top: 0.1rem;
@@ -28,15 +25,21 @@ header {
     flex-flow: column nowrap;
 }
 
-header a{
+header a {
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
 }
 
+
 header a:hover {
-    color:  #009999;
+    color: #009999;
+}
+
+header a.activePage {
+    color: #009999;
+    font-weight: bolder;
 }
 
 nav {
@@ -55,7 +58,7 @@ nav .name h1 {
 }
 
 nav .name a {
-    font-size: 22px;
+    font-size: 30px;
     text-transform: none;
 }
 
@@ -73,22 +76,26 @@ nav li {
 .showcase {
     background-color: #003333;
     display: flex;
-    min-height: 400px;
-    text-align: center;
-    justify-content: center;
+    text-align: left;
+    justify-content: flex-start;
     color: #fff;
     margin: 0;
 }
 
 .showcase h1 {
-    margin-top: 6rem;
+    padding-top: 6rem;
     font-size: 50px;
     float: center;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
-.showcase p{
+.showcase p {
     font-size: 20px;
+}
+
+.showcase p a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .description {
@@ -101,15 +108,32 @@ nav li {
     color: #fff;
 }
 
-.description p{
+.description p {
     font-size: 16px;
 }
 
-.footer{
+.logo {
+    width: 1rem;
+    height: 1rem;
+    float: left;
+}
+
+.text {
+    float: left;
+    
+}
+
+.botdescription {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
     display: flex;
     justify-content: flex-end;
     background-color: #57c0bb;
 }
-.footer p{
+
+.footer p {
     margin-right: 10px;
 }
