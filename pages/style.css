@@ -116,3 +116,13 @@ nav li {
 .description p {
     font-size: 16px;
 }
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #57c0bb;
+}
+
+.footer p {
+    margin-right: 10px;
+}
