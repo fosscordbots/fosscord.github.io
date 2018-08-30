@@ -77,11 +77,15 @@ nav li {
 .showcase {
     background-color: #003333;
     display: flex;
-    min-height: 400px;
-    text-align: center;
-    justify-content: center;
+    text-align: left;
+    justify-content: left;
     color: #fff;
     margin: 0;
+}
+
+.logo {
+    width: 1rem;
+    height: 1rem;
 }
 
 .showcase h1 {
@@ -93,6 +97,11 @@ nav li {
 
 .showcase p {
     font-size: 20px;
+}
+
+.showcase p a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .description {
