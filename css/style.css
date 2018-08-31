@@ -96,15 +96,21 @@ nav li {
 .description {
     background-color:  #a8e1f0;
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     text-align: center;
     align-items: center;
+    justify-content: flex-start;
     padding: 0 7rem;
     color: #fff;
 }
 
 .description p {
     font-size: 16px;
+}
+
+
+.description h1 {
+    font-size: 20px;
 }
 
 .showcase .botdescription {
