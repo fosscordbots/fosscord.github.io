@@ -59,10 +59,19 @@ nav .name a {
     text-transform: none;
 }
 
+nav button {
+	outline: none !important;
+}
+
+@media only screen and (min-width: 992px) {
+	nav #navbarNav {
+		padding-left: 250px;
+	}
+}
+
 nav ul {
     margin: 0;
     padding: 0;
-    padding-top: 1.3rem;
 }
 
 nav li {
