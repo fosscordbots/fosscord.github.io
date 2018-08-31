@@ -15,7 +15,7 @@ body {
 
 /* header */
 header {
-    background: #006666;
+    background: #2994B2;
     padding-top: 0.1rem;
     height: 10vh;
     display: flex;
@@ -32,11 +32,11 @@ header a {
 }
 
 header a:hover {
-    color: #009999;
+    color:  #2fadd0;
 }
 
 header a.activePage {
-    color: #009999;
+    color:  #2fadd0;
     font-weight: bolder;
 }
 
@@ -73,7 +73,7 @@ nav li {
 }
 
 .showcase {
-    background-color: #003333;
+    background-color:#1a7d99;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -97,7 +97,7 @@ nav li {
 }
 
 .description {
-    background-color: #008877;
+    background-color:  #a8e1f0;
     display: flex;
     flex-flow: column wrap;
     height: 60vh;
@@ -119,6 +119,7 @@ nav li {
 .showcase .botdescription .logo {
     padding-top: 15px;
     display: flex;
+    padding-right: 10px;
 }
 
 .showcase .botdescription .logo img {
@@ -132,17 +133,23 @@ nav li {
 }
 
 .showcase .botdescription .text p a:hover{
-color:#008755;
-transition: 0.3s;
+    color:#008755;
+    transition: 0.3s;
 }
 
 .footer {
     display: flex;
     justify-content: flex-end;
-    background-color: #57c0bb;
+    background-color: #2994B2;
     color: #fff;
     height:4vh;
     align-items: baseline;
     padding: 0 1rem 0.5rem 0;
     text-align: center;
+}
+
+
+.footer p a {
+    text-decoration: none;
+    color: #fff;
 }
