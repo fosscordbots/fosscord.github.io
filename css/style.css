@@ -81,6 +81,15 @@ nav li {
     transition: 0.3s;
 }
 
+.side-links img {
+	border: 5px solid #2994B2;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: #fff;
+	width: 55px;
+	height: 55px;
+}
+
 /* DESCRIPTION */
 .description {
     background-color:  #1b6c8b;
