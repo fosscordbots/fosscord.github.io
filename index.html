@@ -6,86 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FossCord</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
-        crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Comfortaa" rel="stylesheet">
 </head>
 
-<body class="m-0 p-0">
-    <main class="d-flex flex-column">
-        <header class="d-flex justify-content-center pt-1">
-            <nav class="d-flex navbar navbar-expand-lg navbar-dark w-75 justify-content-space-around">
-                <div class="d-flex name w-25 justify-content-end">
-                    <a class="navbar-brand" href="/">
-                        <h1 class="m-0">FossCord</h1>
-                    </a>
+<body>
+    <header class="Header">
+        <a class="Header__logo" href="#"><span class="image"></span>FossCord
+        </a>
+    </header>
+    <section class="Main">
+        <article class="Main__article">
+            <p class="Main__article--text">Open Source Discord Bots</p>
+            <p class="Main__article--text">We want to connect all open-source discord bot authors!</p>
+        </article>
+    </section>
+    <div class="Container">
+        <div class="Container__description">
+            <article id="coin" class="article">
+                <div class="article__image"><img src="assets/btc.png" /></div>
+                <div class="article__title">Coin Bot</div>
+                <div class="article__credits">Bot created by <a class="article__credits--link" href="https://github.com/SerekKiri">SerekKiri</a>
+                    &
+                    <a class="article__credits--link" href="https://github.com/rnickson">rnickson</a></div>
+                <div class="article__commands">
+                    <h1 class="article__commands--header">Commands</h1>
+                    <p class="article__commands--text">
+                        !help
+                        !coins
+                        !github
+                        !donate
+                    </p>
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav align-items-end">
-                        <li class="nav-item"><a class="nav-link" href="pages/coin.html">Coin Bot</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/wykoparka.html">Wykoparka</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/bug.html">Bug Hunter</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/reddit.html">Reddit Bot</a></li>
-                    </ul>
+                <div class="article__socials">
+                    <a class="article__socials--github" href="https://github.com/SerekKiri/coin_bot"></a>
+                    <a class="article__socials--paypal" href="https://www.paypal.me/kiritito"></a>
+                    <a class="article__socials--discord" href="https://discordapp.com/oauth2/authorize?client_id=395240399750299658&scope=bot&permissions=0"></a>
                 </div>
-            </nav>
-        </header>
-
-        <section class="showcase d-flex flex-column justify-content-center align-items-center p-2">
-            <h1>Open Source Discord Bots</h1>
-            <p>We want to connect all open-source discord bot authors!</p>
-        </section>
-
-        <section class="description d-flex flex-column justify-content-center align-items-center pt-4">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae ultrices libero. Integer eu
-                justo
-                condimentum, malesuada orci nec, ornare ante. Integer sagittis diam aliquam consectetur pharetra.
-                Phasellus
-                ultricies velit nec blandit efficitur. Suspendisse eleifend odio a quam suscipit aliquet. Quisque
-                libero
-                magna,
-                hendrerit eu risus porttitor, molestie dignissim eros. Vestibulum elementum tellus a nulla molestie
-                commodo.
-                Vivamus laoreet vitae nulla et lobortis. Ut laoreet ultrices odio, sit amet faucibus ipsum sodales nec.
-                Donec
-                dictum nisl nisi, vel iaculis massa molestie eget. Morbi id fermentum velit. Etiam eget odio sodales,
-                gravida dolor
-                eu, finibus lacus. Nunc quis nulla id nunc elementum imperdiet. Sed lacinia, turpis eu facilisis
-                rutrum,
-                turpis leo
-                vehicula nibh, sit amet ultrices odio eros id leo.
-            </p>
-            <p>
-                Quisque bibendum, turpis at consectetur euismod, enim leo venenatis lacus, non hendrerit nulla nunc
-                vitae
-                velit.
-                Etiam efficitur ligula eu tellus consequat suscipit. Nunc nec rhoncus augue. Aliquam accumsan magna id
-                dui
-                efficitur, at bibendum risus condimentum. Vestibulum ac tellus semper, elementum urna eget, consequat
-                lacus. Proin
-                eget aliquam mi. Vestibulum dictum volutpat cursus. Curabitur ut scelerisque libero. Sed tempor justo
-                vitae
-                congue
-                interdum. Aenean maximus enim in velit tempor, nec bibendum tellus pellentesque. Suspendisse potenti.
-            </p>
-        </section>
-
-        <footer class="d-flex justify-content-end align-items-baseline footer pt-2 pr-3">
-            <p>&copy; FossCord crew. Licensed under mit 2018.</p>
-        </footer>
-    </main>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-        crossorigin="anonymous"></script>
+            </article>
+            <article id="wykop" class="article">
+                <div class="article__image"><img src="assets/wykoparka.svg"></div>
+                <div class="article__title">Wykoparka</div>
+                <div class="article__credits">Bot created by <a class="article__credits--link" href="https://github.com/takidelfin">takidelfin</a>
+                    &
+                    <a class="article__credits--link" href="https://github.com/SerekKiri">SerekKiri</a></div>
+                <div class="article__commands">
+                    <h1 class="article__commands--header">Commands</h1>
+                    <p class="article__commands--text">
+                        !help
+                        !coins
+                        !github
+                        !donate
+                    </p>
+                </div>
+                <div class="article__socials">
+                    <a class="article__socials--github" href="https://github.com/SerekKiri/Wykoparka"></a>
+                    <a class="article__socials--paypal" href="https://www.paypal.me/kiritito"></a>
+                    <a class="article__socials--discord" href="https://discordapp.com/oauth2/authorize?client_id=459391891687997451&scope=bot&permissions=0"></a>
+                </div>
+            </article>
+            <article id="hunter" class="article">
+                <div class="article__image"><img src="assets/bughunter.png" /></div>
+                <div class="article__title">Bug Hunter</div>
+                <div class="article__credits">Bot created by <a class="article__credits--link" href="https://github.com/wandal1337">R1SK</a>
+                    & <a class="article__credits--link" href="https://github.com/SerekKiri">SerekKiri</a></div>
+                <div class="article__commands">
+                    <h1 class="article__commands--header">Commands</h1>
+                    <p class="article__commands--text">
+                        !help
+                        !coins
+                        !github
+                        !donate
+                    </p>
+                </div>
+                <div class="article__socials">
+                    <a class="article__socials--github" href="#"></a>
+                    <a class="article__socials--paypal" href="https://www.paypal.me/kiritito"></a>
+                    <a class="article__socials--discord" href="https://discordapp.com/oauth2/authorize?client_id=478867142633062410&scope=bot&permissions=0"></a>
+                </div>
+            </article>
+            <article id="reddit" class="article">
+                <div class="article__image"><img src="assets/reddit.png" /></div>
+                <div class="article__title">Reddit Bot</div>
+                <div class="article__credits">Bot created by <a class="article__credits--link" href="https://github.com/takidelfin">takidelfin</a>
+                    &
+                    <a class="article__credits--link" href="https://github.com/SerekKiri">SerekKiri</a></div>
+                <div class="article__commands">
+                    <h1 class="article__commands--header">Commands</h1>
+                    <p class="article__commands--text">
+                        !help
+                        !coins
+                        !github
+                        !donate
+                    </p>
+                </div>
+                <div class="article__socials">
+                    <a class="article__socials--github" href="https://github.com/SerekKiri/RedditBot"></a>
+                    <a class="article__socials--paypal" href="https://www.paypal.me/kiritito"></a>
+                    <a class="article__socials--discord" href="https://discordapp.com/oauth2/authorize?client_id=485047416291065859&scope=bot&permissions=0"></a>
+                </div>
+            </article>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="footer__description">&copy; <a class="footer__link" href="https://github.com/fosscord">FossCord crew.</a>
+            Licensed under MIT 2018.</p>
+    </footer>
 </body>
 
 </html>

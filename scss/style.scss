@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import 'color';
+@import 'myMixins';
+@import 'fontawesome';
+@import 'brands';
+
+body {
+    font-family: 'Lato',
+        sans-serif;
+    background: url('../assets/background.jpg') top/cover no-repeat;
+    text-align: center;
+    color: $font-color;
+    margin: 0;
+    padding: 0;
+}
+
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 5000;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: $header-background;
+    box-shadow: 0 2px 8px 0 $header-shadow;
+
+    &__logo {
+        @include flex('logo');
+        @include links($font-color);
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 20px;
+        width: 260px;
+        height: 52px;
+        line-height: 52px;
+
+        &:hover {
+            color: $link-hover;
+        }
+
+        .image {
+            background: url('../assets/logo.png') center/cover no-repeat;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+        }
+    }
+}
+
+.Main {
+    @include flex('main');
+    padding-top: 150px;
+    font-size: 1.7rem;
+
+    &__article {
+        @include center-wrapper;
+        max-width: 700px;
+        position: relative;
+        top: 50%;
+
+        &--text {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.Container {
+    @include center-wrapper;
+
+    &__description {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 50px 0;
+    }
+}
+
+.article {
+    @include flex('article');
+    margin-right: 15px;
+    padding: 20px 15px;
+    background-color: $article-color;
+
+    &__image {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+
+        img {
+            width: 150px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+
+    &__credits {
+        font-weight: 600;
+
+        &--link {
+            @include links($font-color);
+
+            &:hover {
+                color: $link-hover;
+            }
+        }
+    }
+
+    &__commands {
+        &--header {
+            font-size: 2.1rem;
+        }
+
+        &--text {
+            font-size: 18px;
+        }
+    }
+
+    &__socials {
+        &--github {
+            @extend %fa-icon;
+            @extend .fab;
+            @include socials;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &:before {
+                content: fa-content($fa-var-github);
+                @include icons;
+            }
+        }
+
+        &--paypal {
+            @extend %fa-icon;
+            @extend .fab;
+            @include socials;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &:before {
+                content: fa-content($fa-var-paypal);
+                @include icons;
+            }
+        }
+
+        &--discord {
+            @extend %fa-icon;
+            @extend .fab;
+            @include socials;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &:before {
+                content: fa-content($fa-var-discord);
+                @include icons;
+            }
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 35px;
+
+    &__description {
+        font-size: 20px;
+    }
+
+    &__link {
+        @include links($font-color);
+
+        &:hover {
+            color: $link-hover;
+        }
+    }
+}
