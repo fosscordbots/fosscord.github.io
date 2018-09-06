@@ -1,81 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FossCord</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Comfortaa" rel="stylesheet">
 </head>
 
-<body>
-    <main id="wrapper">
-        <header>
-            <nav>
-                <div class="name">
-                    <a href="/">
-                        <h1>FossCord</h1>
+<body class="m-0 p-0">
+    <main class="d-flex flex-column">
+        <header class="d-flex justify-content-center pt-1">
+            <nav class="d-flex navbar navbar-expand-lg navbar-dark w-75 justify-content-space-around">
+                <div class="d-flex name w-25 justify-content-end">
+                    <a class="navbar-brand" href="/">
+                        <h1 class="m-0">FossCord</h1>
                     </a>
                 </div>
-                <ul>
-                    <li>
-                        <a href="coin.html">Coin Bot</a>
-                    </li>
-                    <li>
-                        <a href="wykoparka.html">Wykoparka</a>
-                    </li>
-                    <li>
-                        <a href="bug.html">Bug Hunter</a>
-                    </li>
-                    <li>
-                        <a href="reddit.html" class="activePage">Reddit Bot</a>
-                    </li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-end">
+                        <li class="nav-item"><a class="nav-link" href="coin.html">Coin Bot</a></li>
+                        <li class="nav-item"><a class="nav-link" href="wykoparka.html">Wykoparka</a></li>
+                        <li class="nav-item"><a class="nav-link" href="bug.html">Bug Hunter</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="reddit.html">Reddit Bot</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
-        <section class="showcase">
-            <div class="botdescription">
-                <div class="logo">
-                    <img src="/assets/reddit.png" />
+        <section class="showcase d-flex justify-content-center align-items-center">
+            <div class="botdescription pb-2 d-flex">
+                <div class="logo pt-3 pr-3">
+                    <img src="../assets/reddit.png" />
                 </div>
-                <div class="text">
+                <div class="d-flex flex-column align-items-center justify-content-center">
                     <h1>Reddit Bot [WIP]</h1>
-                    <p>Bot created by <a href="https://github.com/takidelfin">takidelfin</a> & <a href="https://github.com/SerekKiri">SerekKiri</a></p>
+                    <p>Bot created by <a href="https://github.com/takidelfin">takidelfin</a> &
+                        <a href="https://github.com/SerekKiri">SerekKiri</a>
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section class="description">
+        <section class="description d-flex justify-content-center align-items-center pt-4">
+            <div class="d-flex flex-column justify-content-center">
                 <h1>Commands:</h1>
-                <pre>
-                    <code> 
-                        !help<br />
-                        !coins<br />
-                        !github<br />
-                        !donate<br />
+                <pre class="d-flex">
+                    <code class="d-flex align-items">
+                        !help
+                        !coins
+                        !github
+                        !donate
                     </code>
                 </pre>
-            <div class="buttons">
+            </div>
+            <div class="d-flex pl-3 w-25 align-items-center justify-content-around">
                 <a href="https://github.com/SerekKiri/RedditBot">
                     <button type="button" class="btn btn-info">Github</button>
                 </a>
                 <a href="https://www.paypal.me/kiritito">
-                        <button type="button" class="btn btn-info">Donation</button>
+                    <button type="button" class="btn btn-info">Donation</button>
                 </a>
                 <a href="https://discordapp.com/oauth2/authorize?client_id=485047416291065859&scope=bot&permissions=0">
-                        <button type="button" class="btn btn-info">Invite</button>
+                    <button type="button" class="btn btn-info">Invite</button>
                 </a>
             </div>
         </section>
 
-        <footer class="footer">
-            <p>&copy; FossCord crew. Licensed under mit 2018.</p>
+        <footer class="d-flex justify-content-end align-items-baseline footer pt-2 pr-3">
+            <p>&copy; <a href="https://github.com/fosscord">FossCord crew.</a> Licensed under mit 2018.</p>
         </footer>
     </main>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

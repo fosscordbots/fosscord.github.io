@@ -1,24 +1,12 @@
 body {
     font: 15px/1.5;
     font-family: 'Comfortaa', cursive;
-    padding: 0;
-    margin: 0;
     background-color: #f4f4f4;
-}
-
-#wrapper {
-    width: 100%;
-    display: flex;
-    flex-flow: column;
 }
 
 /* header */
 header {
     background: #2994B2;
-    padding-top: 0.1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 header a {
@@ -38,19 +26,12 @@ header a.activePage {
     font-weight: bolder;
 }
 
-nav {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-}
-
 nav .name {
     font-family: 'Amatic SC', cursive;
     font-size: 25px;
 }
 
 nav .name h1 {
-    margin: 0;
     color: #ffffff;
 }
 
@@ -59,23 +40,20 @@ nav .name a {
     text-transform: none;
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    padding-top: 1.3rem;
+@media only screen and (min-width: 992px) {
+	nav #navbarNav {
+		justify-content: flex-end;
+	}
 }
 
 nav li {
-    display: inline;
     padding: 0px 20px 0px 20px;
 }
 
+/* SHOWCASE */
+
 .showcase {
     background-color:#1a7d99;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items:center;
     color: #fff;
 }
 
@@ -93,13 +71,20 @@ nav li {
     text-decoration: none;
 }
 
+.showcase .botdescription .logo img {
+    width: 10em;
+    height: 10em;
+}
+
+.showcase .botdescription .text p a:hover {
+    color: #008755;
+    transition: 0.3s;
+}
+
+/* DESCRIPTION */
 .description {
-    background-color:  #a8e1f0;
-    display: flex;
-    flex-flow: row;
+    background-color:  #1b6c8b;
     text-align: center;
-    align-items: center;
-    justify-content: flex-start;
     padding: 0 7rem;
     color: #fff;
 }
@@ -113,42 +98,13 @@ nav li {
     font-size: 20px;
 }
 
-.showcase .botdescription {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.showcase .botdescription .logo {
-    padding-top: 15px;
-    display: flex;
-    padding-right: 10px;
-}
-
-.showcase .botdescription .logo img {
-    widows: 13em;
-    height:13em;
-}
-
-.showcase .botdescription .text {
-    display: flex;
-    flex-flow: column wrap;
-}
-
-.showcase .botdescription .text p a:hover{
-    color:#008755;
-    transition: 0.3s;
-}
+/* FOOTER */
 
 .footer {
-    display: flex;
-    justify-content: flex-end;
     background-color: #2994B2;
     color: #fff;
-    align-items: baseline;
-    padding: 0 1rem 0.5rem 0;
     text-align: center;
 }
-
 
 .footer p a {
     text-decoration: none;
