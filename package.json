@@ -1,6 +1,6 @@
 {
   "name": "fosscord.github.io",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "fosscord.github.io",
   "main": "gulpfile.js",
   "scripts": {
